@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: clean-architecture-deployment
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: clean-architecture
+  template:
+    metadata:
+      labels:
+        app: clean-architecture
+    spec:
+      containers:
+        - name: clean-architecture
+          image: avlasov/clean-architecture:v0.0.1
+          ports:
+            - containerPort: 8080

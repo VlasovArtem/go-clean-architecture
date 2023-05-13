@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: clean-architecture-pod
+  labels:
+    app: clean-architecture
+spec:
+  containers:
+    - name: clean-architecture
+      image: avlasov/clean-architecture:v0.0.1
+      ports:
+        - containerPort: 8080
