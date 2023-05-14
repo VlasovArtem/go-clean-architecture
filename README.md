@@ -37,3 +37,5 @@ The [./build](./build) folder contains the build scripts. For example Dockerfile
 The [./api](./api) folder contains the api documentation.
 ### Deployment
 The [./deployment](./deployment) folder contains the deployment scripts. For example Kubernetes deployment.
+# How to use
+Use [a sample](https://github.com/VlasovArtem/go-clean-architecture-sample) as starting point. 
